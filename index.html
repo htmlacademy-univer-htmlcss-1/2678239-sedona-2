@@ -10,7 +10,7 @@
         <img src="#" alt="Логотип Сайта">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -37,12 +37,11 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="visually-hidden">Сайт города Седона</h1>
-      <section class="greeting">
-        <h2 class="visually-hidden">Вступление</h2>
+    <main class="main-index">
+      <header class="main-index-header">
+        <h1 class="visually-hidden">Сайт города Седона</h1>
         <img src="#" alt="Горный пейзаж города Седона">
-      </section>
+      </header>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <h3 class="advantages-subtitle">Седона — небольшой городок в Аризоне,
@@ -74,9 +73,11 @@
         </ul>
       </section>
       <section class="comfort">
-        <h2 class="visually-hidden">Комфорт</h2>
-        <h3 class="comfort-slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
-        <p>Опытный персонал и качественное обслуживание!</p>
+        <header class="comfort-header">
+          <h2 class="visually-hidden">Комфорт</h2>
+          <h3 class="comfort-slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
+          <p>Опытный персонал и качественное обслуживание!</p>
+        </header>
         <ul class="comfort-list">
           <li class="comfort-item">
             <h3 class="comfort-item-title">Жилье</h3>
@@ -96,14 +97,12 @@
         </ul>
       </section>
       <section class="hotels">
-        <h2 class="visually-hidden">Гостиницы</h2>
-        <h3 class="hotels-subtitle">Заинтересовались?</h3>
+        <h2 class="hotels-subtitle">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="hotels-search-btn" type="button">поиск гостиниц в седоне</button>
       </section>
       <section class="notifications">
-        <h2 class="visually-hidden">Рассылка</h2>
-        <h3 class="notification-subtitle">Подпишитесь на рассылку</h3>
+        <h2 class="notification-subtitle">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" target="_blank">
           <input class="notification-email-input" name="email" type="email">
@@ -115,17 +114,17 @@
       <h2 class="footer-contacts-subtitle">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="footer-social-link" href="#">
+          <a class="footer-social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-social-link" href="#">
+          <a class="footer-social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="footer-social-link" href="#">
+          <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
@@ -134,7 +133,6 @@
       <a href="https://htmlacademy.ru/">
         <img src="#" alt="Лого HTML-Академии">
       </a>
-
     </footer>
   </body>
 </html>
