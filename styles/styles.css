@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -166,19 +166,19 @@ body {
 
 /* section rules */
 .main-index-header {
-  background: var(--basic-background-color) url("images/main_page/welocome_background.jpg") no-repeat;
+  background: var(--basic-background-color) url("../images/main_page/welocome_background.jpg") no-repeat;
   background-size: cover;
 }
 
 .notifications {
-  background: var(--basic-background-color) url("images/main_page/subscribe_background.jpg") no-repeat;
+  background: var(--basic-background-color) url("../images/main_page/subscribe_background.jpg") no-repeat;
   background-size: cover;
   color: #fff;
 }
 
 .filter {
   color: #fff;
-  background: var(--basic-background-color) url("images/catalog_page/filter_background.jpg") no-repeat;
+  background: var(--basic-background-color) url("../images/catalog_page/filter_background.jpg") no-repeat;
   background-size: cover;
 }
 /* ### */
