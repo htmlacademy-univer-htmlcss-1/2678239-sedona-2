@@ -34,6 +34,11 @@ body {
   color: #000;
 }
 
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .basic-item-block {
   background: var(--secondary-light-background-color);
   /* Размер текста задается классом .block-list */
@@ -105,8 +110,7 @@ body {
 /* ### */
 
 .input-label-text {
-  /* На синем фоне будет плохо видно */
-  /*color: #AAA;*/
+  color: #AAA;
   font-weight: 400;
 }
 
