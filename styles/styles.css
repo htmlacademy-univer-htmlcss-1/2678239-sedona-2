@@ -104,8 +104,6 @@ h3.visually-hidden {
 
 .hotels-filter-group {
   margin-right: 70px;
-  width: 141px;
-  box-sizing: border-box;
 }
 
 .hotels-filter-group-price {
@@ -220,6 +218,13 @@ h3.visually-hidden {
 
 .hotels-list {
   gap: 20px;
+}
+
+.hotel-filter-list {
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  width: 151px;
 }
 
 .price {
