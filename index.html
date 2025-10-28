@@ -8,16 +8,16 @@
   <body>
     <header class="page-navigation">
       <nav class="navigation">
-        <img src="images/shared/logo.svg" alt="Логотип Сайта">
-        <ul class="navigation-list header-4">
+        <img class="header-logo" src="images/shared/logo.svg" alt="Логотип Сайта">
+        <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
+            <a class="navigation-link header-4 navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link header-4" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link header-4" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -39,81 +39,91 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <header class="main-index-header center-text">
+    <main class="main-index main-container">
+      <header class="main-index-header">
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <img src="images/main_page/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
       </header>
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <h3 class="header-2 center-text">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</h3>
-        <p class="center-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <header class="advantages-header">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <h3 class="advantages-title header-wrapper header-2">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</h3>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </header>
         <ul class="block-list advantages-list">
-          <li class="basic-item-block image-item-block advantage-item-image-right">
-            <h3 class="advantage-item-title header-3">Настоящий городок</h3>
-            <p class="advantage-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantage-item-image advantage-item">
+            <div class="basic-item-block image-description-item-block">
+              <h3 class="advantage-item-title header-wrapper header-3">Настоящий городок</h3>
+              <p class="advantage-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="images/main_page/street.jpg" width="800" height="385" alt="Улицы города Седона">
           </li>
           <li class="basic-item-block advantage-item">
-            <h3 class="advantage-item-title header-3">Небольшая площадь</h3>
+            <h3 class="advantage-item-title header-wrapper header-3">Небольшая площадь</h3>
             <p class="advantage-item-text">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="basic-item-block additional-item-block advantage-item">
-            <h3 class="advantage-item-title header-3">Красивая дорога</h3>
+            <h3 class="advantage-item-title header-wrapper header-3">Красивая дорога</h3>
             <p class="advantage-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="basic-item-block advantage-item">
-            <h3 class="advantage-item-title header-3">Мало туристов</h3>
+            <h3 class="advantage-item-title header-wrapper header-3">Мало туристов</h3>
             <p class="advantage-item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="basic-item-block image-item-block advantage-item-image-right">
-            <h3 class="advantage-item-title header-3">Там есть мост дьявола</h3>
-            <p class="advantage-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="advantage-item-image advantage-item-image-left advantage-item">
+            <div class="basic-item-block image-description-item-block">
+              <h3 class="advantage-item-title header-wrapper header-3">Там есть мост дьявола</h3>
+              <p class="advantage-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
             <img src="images/main_page/devil_bridge.jpg" width="800" height="385" alt="Мост Дьявола">
           </li>
         </ul>
       </section>
       <section class="comfort">
-        <header class="comfort-header center-text">
+        <header class="comfort-header">
           <h2 class="visually-hidden">Комфорт</h2>
-          <h3 class="header-2">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
+          <h3 class="header-wrapper header-2">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
           <p>Опытный персонал и качественное обслуживание!</p>
         </header>
         <ul class="block-list comfort-list">
           <li class="basic-item-block additional-item-block comfort-item">
-            <h3 class="header-3">Жилье</h3>
+            <h3 class="header-wrapper header-3">Жилье</h3>
             <p class="comfort-item-text">Рекомендуем пожить в настоящем мотеле,
               всё как в кино!</p>
           </li>
           <li class="basic-item-block comfort-item">
-            <h3 class="header-3">Еда</h3>
+            <h3 class="header-wrapper header-3">Еда</h3>
             <p class="comfort-item-text">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="basic-item-block additional-item-block comfort-item">
-            <h3 class="header-3">Сувениры</h3>
+            <h3 class="header-wrapper header-3">Сувениры</h3>
             <p class="comfort-item-text">Не только китайского,
               но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
-      <section class="hotels center-text">
-        <h2 class="header-2">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="basic-button" type="button">поиск гостиниц в седоне</button>
+      <section class="hotels">
+        <div class="hotels-content-container">
+          <h2 class="header-wrapper header-2">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="basic-button" type="button">поиск гостиниц в седоне</button>
+        </div>
       </section>
-      <section class="notifications center-text">
-        <h2 class="header-2">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="notifications">
+        <div class="notifications-content-container">
+        <h2 class="header-wrapper header-2">Подпишитесь на рассылку</h2>
+        <p class="notifications-slogan">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" target="_blank">
           <input class="notification-email-input" name="email" type="email">
           <input class="basic-button additional-button" type="submit" value="Подписаться">
         </form>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <h2 class="footer-contacts-subtitle">Контакты</h2>
+    <footer class="content-container page-footer">
+      <h2 class="footer-contacts-subtitle visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://vk.com/htmlacademy">
