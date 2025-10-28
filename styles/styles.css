@@ -59,7 +59,14 @@ body {
 h1.visually-hidden,
 h2.visually-hidden,
 h3.visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-index-header {
@@ -88,6 +95,11 @@ h3.visually-hidden {
 
 .hotels-filter {
   display: flex;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
 }
 
 .hotels-filter-group {
@@ -192,6 +204,8 @@ h3.visually-hidden {
 }
 
 .select-control {
+  margin-left: auto;
+  margin-right: 70px;
   font-size: 18px;
   line-height: 23px;
 }
