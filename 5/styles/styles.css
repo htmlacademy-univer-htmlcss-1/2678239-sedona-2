@@ -43,6 +43,7 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   color: #000;
+  height: 100%;
   background-color: #FFF;
   width: 1200px;
   margin: 0 auto;
