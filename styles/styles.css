@@ -650,13 +650,13 @@ body {
 }
 
 .stars-rating-2 {
-  background-image: url("/images/catalog_page/stars/stars-2.svg");
+  background-image: url("../images/catalog_page/stars/stars-2.svg");
 }
 
 .stars-rating-3 {
-  background-image: url("/images/catalog_page/stars/stars-3.svg");
+  background-image: url("../images/catalog_page/stars/stars-3.svg");
 }
 
 .stars-rating-4 {
-  background-image: url("/images/catalog_page/stars/stars-4.svg");
+  background-image: url("../images/catalog_page/stars/stars-4.svg");
 }
