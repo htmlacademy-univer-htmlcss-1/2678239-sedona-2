@@ -649,14 +649,19 @@ body {
   background: var(--page-color);
 }
 
-.stars-rating-2 {
-  background-image: url("../images/catalog_page/stars/stars-2.svg");
+.hotel-card-stars-container {
+  display: flex;
+  align-items: center;
 }
 
-.stars-rating-3 {
-  background-image: url("../images/catalog_page/stars/stars-3.svg");
+.stars-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 6px;
 }
 
-.stars-rating-4 {
-  background-image: url("../images/catalog_page/stars/stars-4.svg");
+.stars-item {
+  line-height: 0;
 }
