@@ -186,11 +186,39 @@ body {
 }
 
 .hotel-card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
   width: 340px;
   box-sizing: border-box;
   padding: 20px;
   border-radius: 4px;
-  border: 2px solid var(--element-color);
+  border: 1px solid var(--element-color);
+}
+
+.hotel-card-link {
+  grid-column: 1 / 3;
+  line-height: 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.hotel-card-link .header-3 {
+  margin-bottom: 0;
+}
+
+.price {
+  margin: 0;
+  padding: 0;
+}
+
+.price-for {
+  grid-column: 1 / 2;
+}
+
+.price-value {
+  grid-column: 2 / 3;
+  text-align: right;
 }
 
 .page-content-container {
@@ -347,6 +375,8 @@ body {
 }
 
 .hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   margin-bottom: 80px;
 }
@@ -357,10 +387,6 @@ body {
   line-height: 23px;
   font-size: 18px;
   width: 151px;
-}
-
-.price {
-  color: #333;
 }
 
 .basic-button {
@@ -534,6 +560,10 @@ body {
   box-sizing: border-box;
 }
 
+.hotel-card-image {
+  margin-bottom: 16px;
+}
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -579,4 +609,59 @@ body {
   display: block;
   font-size: 22px;
   line-height: 26px;
+}
+
+.basic-button:focus,
+.basic-button:hover {
+  background: #615048;
+}
+
+.basic-button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button:hover {
+  background: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button:focus {
+  background: none;
+  outline: 3px solid var(--basic-background-color);
+  border-radius: 4px;
+}
+
+.additional-button:focus,
+.additional-button:hover {
+  background: #68A2CA;
+}
+
+.selected-button:hover,
+.selected-button:focus {
+  background: #6C9E42;
+}
+
+.rating-button:focus,
+.rating-button:hover,
+.pagination-current:focus,
+.pagination-current:hover {
+  background: var(--page-color);
+}
+
+.hotel-card-stars-container {
+  display: flex;
+  align-items: center;
+}
+
+.stars-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 6px;
+}
+
+.stars-item {
+  line-height: 0;
 }
