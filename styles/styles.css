@@ -303,11 +303,11 @@ body {
 }
 
 .navigation-link-search {
-  background-image: url("/images/shared/header_icons/search.svg");
+  background-image: url("../images/shared/header_icons/search.svg");
 }
 
 .navigation-link-likes {
-  background-image: url("/images/shared/header_icons/favourites.svg");
+  background-image: url("../images/shared/header_icons/favourites.svg");
   margin-right: 20px;
   position: relative;
 }
