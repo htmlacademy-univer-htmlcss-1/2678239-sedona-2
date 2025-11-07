@@ -162,8 +162,8 @@ body {
 .pagination {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  padding-bottom: 60px;
+  padding: 40px 0 60px 0;
+  border-top: 1px solid var(--element-white);
   display: flex;
   gap: 8px;
 }
@@ -297,11 +297,6 @@ body {
   background: #756257;
 }
 
-.navigation-list-user .navigation-link {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .navigation-link-search {
   background-image: url("../images/shared/header_icons/search.svg");
 }
@@ -315,7 +310,7 @@ body {
 .navigation-link-likes-count {
   line-height: 10px;
   font-size: 10px;
-  padding: 5px;
+  padding: 5px 5px 5px 4px;
   border-radius: 50%;
   top: 11px;
   right: 4px;
@@ -329,6 +324,8 @@ body {
   min-height: 20px;
   min-width: 20px;
   padding: 22px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation-item-button {
@@ -442,9 +439,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  border-bottom: 1px solid var(--element-white);
   padding-bottom: 40px;
-  margin-bottom: 40px;
 }
 
 .hotel-filter-list {
