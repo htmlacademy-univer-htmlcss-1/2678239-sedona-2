@@ -42,6 +42,7 @@ body {
   min-height: 100%;
   background-color: #FFF;
   width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
