@@ -15,14 +15,13 @@
 }
 
 :root {
-  --hover-blue: #68A2CA;
-  --background-blue: #82B3D3;
-  --background-white: #E6F0F6;
-  --background-white-light: #F0F6F9;
-  --element-brown: #756157;
-  --button-green: #7DB54F;
-  --button-blue: #81B2D1;
-  --element-white: #E5E5E5;
+  --hover-color: #68A2CA;
+  --bg-block: #F0F6F9;
+  --bg-block-secondary: #E6F0F6;
+  --btn-basic: #756157;
+  --btn-secondary: #82B3D3;
+  --bg-success: #7DB54F;
+  --border-basic: #E5E5E5;
   --page-color: #F2F2F2;
 }
 
@@ -66,14 +65,14 @@ body {
 }
 
 .main-index-header {
-  background: var(--background-blue) url("../images/main_page/welcome_background.jpg") no-repeat;
+  background: var(--btn-secondary) url("../images/main_page/welcome_background.jpg") no-repeat;
   height: 485px;
   background-size: cover;
   padding-top: 51px;
 }
 
 .notifications {
-  background: var(--background-blue) url("../images/main_page/subscribe_background.jpg") no-repeat;
+  background: var(--btn-secondary) url("../images/main_page/subscribe_background.jpg") no-repeat;
   background-size: cover;
   padding-top: 96px;
   padding-bottom: 104px;
@@ -92,7 +91,7 @@ body {
 
 .filter {
   color: #fff;
-  background: var(--background-blue) url("../images/catalog_page/filter_background.jpg") no-repeat;
+  background: var(--btn-secondary) url("../images/catalog_page/filter_background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -122,7 +121,7 @@ body {
 
 .results-view-control {
   border-radius: 4px;
-  border: var(--element-white) 2px solid;
+  border: var(--border-basic) 2px solid;
 }
 
 .results-view-link-selected {
@@ -157,14 +156,14 @@ body {
 }
 
 .results-view-link:focus {
-  border-color: var(--hover-blue);
+  border-color: var(--hover-color);
 }
 
 .pagination {
   list-style-type: none;
   margin: 0;
   padding: 40px 0 60px 0;
-  border-top: 1px solid var(--element-white);
+  border-top: 1px solid var(--border-basic);
   display: flex;
   gap: 8px;
 }
@@ -216,7 +215,7 @@ body {
   gap: 16px 20px;
   padding: 20px;
   border-radius: 4px;
-  border: 1px solid var(--element-white);
+  border: 1px solid var(--border-basic);
 }
 
 .hotel-card-link {
@@ -318,7 +317,7 @@ body {
   right: 3px;
   color: #fff;
   position: absolute;
-  background-color: var(--button-green);
+  background-color: var(--bg-success);
 
 }
 
@@ -459,8 +458,9 @@ body {
   line-height: 20px;
   padding: 8px 34px;
   font-weight: 700;
-  background: var(--element-brown);
+  background: var(--btn-basic);
   border: none;
+  cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
   color: #fff;
@@ -479,11 +479,11 @@ body {
 }
 
 .additional-button {
-  background: var(--background-blue);
+  background: var(--btn-secondary);
 }
 
 .selected-button {
-  background: var(--button-green);
+  background: var(--bg-success);
 }
 
 .reset-button {
@@ -560,7 +560,7 @@ body {
   height: 385px;
   padding: 102px 85px;
   text-align: center;
-  background: var(--background-white-light);
+  background: var(--bg-block);
 }
 
 .advantages-list .block-item-title,
@@ -590,17 +590,17 @@ body {
 
 .image-description-item-block {
   color: #fff;
-  background: var(--background-blue);
+  background: var(--btn-secondary);
 }
 
 .additional-item-block {
-  background: var(--background-white);
+  background: var(--bg-block-secondary);
 }
 
 .advantage-item-image {
   display: flex;
   width: 100%;
-  background: var(--button-blue);
+  background: var(--btn-secondary);
 }
 
 .comfort-list .block-item-title {
@@ -722,7 +722,7 @@ body {
 .pagination-link {
   box-sizing: border-box;
   padding: 12px 10px;
-  background-color: var(--background-blue);
+  background-color: var(--btn-secondary);
   display: block;
   color: #fff;
 }
@@ -730,6 +730,7 @@ body {
 .pagination-current {
   color: #000;
   background-color: var(--page-color);
+  cursor: auto;
 }
 
 .pagination-skip  {
@@ -754,7 +755,7 @@ body {
 
 .footer-social-link:focus .social-link-icon,
 .footer-social-link:hover .social-link-icon {
-  fill: var(--hover-blue);
+  fill: var(--hover-color);
 }
 
 .footer-social-link:active .social-link-icon{
@@ -777,13 +778,13 @@ body {
 
 .reset-button:focus {
   background: none;
-  box-shadow: 0 0 0 3px var(--background-blue) inset;
+  box-shadow: 0 0 0 3px var(--btn-secondary) inset;
   border-radius: 4px;
 }
 
 .additional-button:focus,
 .additional-button:hover {
-  background: var(--hover-blue);
+  background: var(--hover-color);
 }
 
 .selected-button:hover,
@@ -793,7 +794,7 @@ body {
 
 .pagination-link:hover:not(.pagination-current),
 .pagination-link:focus:not(.pagination-current) {
-  box-shadow: 0 0 0 1px var(--background-blue) inset;
+  box-shadow: 0 0 0 1px var(--btn-secondary) inset;
 }
 
 .rating-button:focus,
@@ -827,7 +828,7 @@ body {
 
 .footer-phone-number:focus,
 .footer-phone-number:hover {
-  color: var(--element-brown);
+  color: var(--btn-basic);
 }
 
 .footer-phone-number:active {
@@ -840,7 +841,7 @@ body {
 
 .academy-logo-link:hover .academy-logo-icon,
 .academy-logo-link:focus .academy-logo-icon {
-  fill: var(--element-brown);
+  fill: var(--btn-basic);
 }
 
 .academy-logo-link:active .academy-logo-icon {
@@ -849,6 +850,6 @@ body {
 
 .select-control:hover,
 .select-control:focus {
-  border-color: var(--hover-blue);
+  border-color: var(--hover-color);
 }
 
