@@ -15,11 +15,11 @@
 }
 
 :root {
-  --hover-color: #68A2CA;
   --bg-block: #F0F6F9;
   --bg-block-secondary: #E6F0F6;
   --btn-basic: #756157;
   --btn-secondary: #82B3D3;
+  --btn-secondary-dark: #68A2CA;
   --bg-success: #7DB54F;
   --border-basic: #E5E5E5;
   --page-color: #F2F2F2;
@@ -156,7 +156,7 @@ body {
 }
 
 .results-view-link:focus {
-  border-color: var(--hover-color);
+  border-color: var(--btn-secondary-dark);
 }
 
 .pagination {
@@ -215,7 +215,7 @@ body {
   gap: 16px 20px;
   padding: 20px;
   border-radius: 4px;
-  border: 1px solid var(--border-basic);
+  box-shadow: 0 0 0 1px var(--border-basic);
 }
 
 .hotel-card-link {
@@ -438,7 +438,7 @@ body {
 
 .hotels-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-bottom: 40px;
 }
@@ -628,6 +628,8 @@ body {
   background-image: url("../images/main_page/advantages_icons/home.svg");
   background-repeat: no-repeat;
   background-position: 163px 81px;
+  padding-left: 110px;
+  padding-right: 110px;
 }
 
 .advantages-title {
@@ -755,7 +757,7 @@ body {
 
 .footer-social-link:focus .social-link-icon,
 .footer-social-link:hover .social-link-icon {
-  fill: var(--hover-color);
+  fill: var(--btn-secondary-dark);
 }
 
 .footer-social-link:active .social-link-icon{
@@ -784,7 +786,7 @@ body {
 
 .additional-button:focus,
 .additional-button:hover {
-  background: var(--hover-color);
+  background: var(--btn-secondary-dark);
 }
 
 .selected-button:hover,
@@ -850,6 +852,6 @@ body {
 
 .select-control:hover,
 .select-control:focus {
-  border-color: var(--hover-color);
+  border-color: var(--btn-secondary-dark);
 }
 
