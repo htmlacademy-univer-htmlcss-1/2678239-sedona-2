@@ -19,6 +19,7 @@
   --bg-block-secondary: #E6F0F6;
   --btn-basic: #756157;
   --btn-secondary: #82B3D3;
+  --btn-secondary-light: #83B3D3;
   --btn-secondary-dark: #68A2CA;
   --bg-success: #7DB54F;
   --border-basic: #E5E5E5;
@@ -204,8 +205,133 @@ body {
   padding-top: 56px;
 }
 
-.input-price {
-  width: 90px;
+.price-input-wrapper {
+  display: flex;
+  margin-bottom: 48px;
+  gap: 2px;
+}
+
+.range-input {
+  width: 143px;
+  padding: 12px 51px 12px 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.range-input-min {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.range-input-max {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.price-filter-label {
+  display: block;
+  position: relative;
+}
+
+.range-label {
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.range-toggle{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  top: -8px
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+}
+
+.control-mark {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background: #fff url("../images/catalog_page/check_mark.svg") no-repeat 4px 6px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  content: "";
+}
+
+.control:hover .control-mark,
+.control:hover .control-label {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark {
+  outline: 3px solid var(--btn-secondary-light);
+}
+
+.control:active .control-mark,
+.control:active .control-label {
+  opacity: 0.3;
+}
+
+.filter-hotel-type .control-mark {
+  border-radius: 50%;
+}
+
+.range-toggle:focus {
+  outline: 3px solid var(--btn-secondary-light);
+}
+
+.range-toggle:active {
+  outline: 2px solid var(--btn-secondary-light);
+}
+
+.toggle-max {
+  right: 0;
+}
+
+.price-range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #fff;
+}
+
+.price-scale {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 4px;
 }
 
 .hotel-card {
@@ -215,7 +341,7 @@ body {
   gap: 16px 20px;
   padding: 20px;
   border-radius: 4px;
-  box-shadow: 0 0 0 1px var(--border-basic);
+  outline: solid 1px var(--border-basic);
 }
 
 .hotel-card-link {
@@ -318,7 +444,6 @@ body {
   color: #fff;
   position: absolute;
   background-color: var(--bg-success);
-
 }
 
 .navigation-list-user .navigation-link {
@@ -408,12 +533,26 @@ body {
   line-height: 24px;
   color: #000;
   font-weight: 700;
+  display: block;
 }
 
-.input-label-text {
-  color: #AAA;
-  font-weight: 400;
-  line-height: 23px;
+.filter-buttons-container .basic-button {
+  width: 191px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+}
+
+.range-input:focus {
+  background-color: #E6E6E6;
+  outline: var(--btn-secondary-light) solid 3px;
 }
 
 .select-control {
@@ -424,6 +563,10 @@ body {
   font-size: 18px;
   line-height: 23px;
   width: 292px;
+  appearance: none;
+  background-image: url("../images/catalog_page/arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
 
 .block-list {
@@ -752,7 +895,7 @@ body {
 }
 
 .social-link-icon {
-  fill: #83B3D3;
+  fill: var(--btn-secondary-light);
 }
 
 .footer-social-link:focus .social-link-icon,
