@@ -467,10 +467,6 @@ body {
   margin-left: auto;
 }
 
-.header-logo {
-  /*align-self: flex-start;*/
-}
-
 .logo-link {
   position: relative;
   z-index: 1;
@@ -1034,7 +1030,7 @@ body {
   margin-bottom: 64px;
 }
 
-.search-label-guests {
+.guest-counter-container {
   display: flex;
   align-items: center;
 }
@@ -1044,6 +1040,7 @@ body {
 }
 
 .date-input {
+  position: relative;
   border: none;
   padding: 12px 0 12px 20px;
   max-width: 440px;
@@ -1056,6 +1053,7 @@ body {
 }
 
 .search-label-date {
+  position: relative;
   display: flex;
   width: 100%;
   align-items: center;
@@ -1069,24 +1067,25 @@ body {
   width: 100%;
 }
 
-.search-label-children {
+.children-counter {
   margin-left: auto;
 }
 
 .guest-number-input {
+  line-height: 20px;
   appearance: none;
   border: none;
   width: 31px;
   background-color: var(--page-color);
   text-align: center;
-  padding: 14px 12px;
+  padding: 14px 0;
 }
 
-.guest-number-group {
+.guest-count-group {
   margin-bottom: 48px;
 }
 
-.guest-number-label {
+.guest-counter-label {
   margin-right: 46px;
 }
 
@@ -1096,6 +1095,95 @@ body {
   margin: 0;
 }
 
-.counter-control-mark {
-  position: absolute;
+.counter-button {
+  position: relative;
+  background-color: var(--page-color);
+  padding: 14px 10px;
+  border: none;
+  width: 20px;
+  box-sizing: content-box;
+  height: 20px;
+  cursor: pointer;
 }
+
+.counter-button-plus {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.counter-button-minus {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.counter-button-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.search-label-date::before {
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  left: 157px;
+  bottom: -25px;
+}
+
+.check-in-label::before {
+  color: #FF5757;
+  content: "Мы не можем отправить вас в прошлое.";
+}
+
+.check-out-label::before {
+  content: "На эти даты есть свободные номера. Пока есть.";
+}
+
+.children-counter-label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tooltip-mark {
+  background: var(--btn-secondary-light) url("../images/modal/info.svg") no-repeat center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-mark:hover::after {
+  top: 35px;
+  left: 50%;
+  position: absolute;
+  content: "";
+  background-color: #333333;
+  width: 13px;
+  height: 13px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.tooltip-mark:hover::before {
+  padding: 15px 18px 18px 22px;
+  top: 41px;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 10px;
+  color: #fff;
+  width: 256px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  position: absolute;
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  background-color: #333333;
+}
+
+
+
