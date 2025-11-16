@@ -467,10 +467,6 @@ body {
   margin-left: auto;
 }
 
-.header-logo {
-  align-self: flex-start;
-}
-
 .logo-link {
   position: relative;
   z-index: 1;
@@ -603,6 +599,7 @@ body {
   font-weight: 700;
   background: var(--btn-basic);
   border: none;
+  display: inline-block;
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
@@ -997,4 +994,196 @@ body {
 .select-control:focus {
   border-color: var(--btn-secondary-dark);
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  box-sizing: border-box;
+  border-radius: 30px;
+  align-self: center;
+  padding: 64px 70px;
+  background-color: #fff;
+  width: 717px;
+  margin: 0 auto;
+}
+
+.hotel-search-group {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.guest-counter-container {
+  display: flex;
+  align-items: center;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.date-input {
+  position: relative;
+  border: none;
+  padding: 12px 0 12px 20px;
+  max-width: 440px;
+  margin-left: auto;
+  flex-grow: 1;
+  background-color: var(--page-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.search-label-date {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.hotel-search-button {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 0 18px;
+  width: 100%;
+}
+
+.children-counter {
+  margin-left: auto;
+}
+
+.guest-number-input {
+  line-height: 20px;
+  appearance: none;
+  border: none;
+  width: 31px;
+  background-color: var(--page-color);
+  text-align: center;
+  padding: 14px 0;
+}
+
+.guest-count-group {
+  margin-bottom: 48px;
+}
+
+.guest-counter-label {
+  margin-right: 46px;
+}
+
+.guest-number-input::-webkit-outer-spin-button,
+.guest-number-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.counter-button {
+  position: relative;
+  background-color: var(--page-color);
+  padding: 14px 10px;
+  border: none;
+  width: 20px;
+  box-sizing: content-box;
+  height: 20px;
+  cursor: pointer;
+}
+
+.counter-button-plus {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.counter-button-minus {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.counter-button-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.search-label-date::before {
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  left: 157px;
+  bottom: -25px;
+}
+
+.check-in-label::before {
+  color: #FF5757;
+  content: "Мы не можем отправить вас в прошлое.";
+}
+
+.check-out-label::before {
+  content: "На эти даты есть свободные номера. Пока есть.";
+}
+
+.children-counter-label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tooltip-mark {
+  background: var(--btn-secondary-light) url("../images/modal/info.svg") no-repeat center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-mark:hover::after {
+  top: 35px;
+  left: 50%;
+  position: absolute;
+  content: "";
+  background-color: #333333;
+  width: 13px;
+  height: 13px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.tooltip-mark:hover::before {
+  padding: 15px 18px 18px 22px;
+  top: 41px;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 10px;
+  color: #fff;
+  width: 256px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  position: absolute;
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  background-color: #333333;
+}
+
+
 
