@@ -468,7 +468,7 @@ body {
 }
 
 .header-logo {
-  align-self: flex-start;
+  /*align-self: flex-start;*/
 }
 
 .logo-link {
@@ -603,6 +603,7 @@ body {
   font-weight: 700;
   background: var(--btn-basic);
   border: none;
+  display: inline-block;
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
@@ -998,3 +999,103 @@ body {
   border-color: var(--btn-secondary-dark);
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  box-sizing: border-box;
+  border-radius: 30px;
+  align-self: center;
+  padding: 64px 70px;
+  background-color: #fff;
+  width: 717px;
+  margin: 0 auto;
+}
+
+.hotel-search-group {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.search-label-guests {
+  display: flex;
+  align-items: center;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.date-input {
+  border: none;
+  padding: 12px 0 12px 20px;
+  max-width: 440px;
+  margin-left: auto;
+  flex-grow: 1;
+  background-color: var(--page-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.search-label-date {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.hotel-search-button {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 0 18px;
+  width: 100%;
+}
+
+.search-label-children {
+  margin-left: auto;
+}
+
+.guest-number-input {
+  appearance: none;
+  border: none;
+  width: 31px;
+  background-color: var(--page-color);
+  text-align: center;
+  padding: 14px 12px;
+}
+
+.guest-number-group {
+  margin-bottom: 48px;
+}
+
+.guest-number-label {
+  margin-right: 46px;
+}
+
+.guest-number-input::-webkit-outer-spin-button,
+.guest-number-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.counter-control-mark {
+  position: absolute;
+}
