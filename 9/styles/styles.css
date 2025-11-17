@@ -900,7 +900,7 @@ body {
   fill: var(--btn-secondary-dark);
 }
 
-.footer-social-link:active .social-link-icon{
+.footer-social-link:active .social-link-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -1025,6 +1025,7 @@ body {
 }
 
 .modal-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
@@ -1046,10 +1047,15 @@ body {
   max-width: 440px;
   margin-left: auto;
   flex-grow: 1;
-  background-color: var(--page-color);
+  background: var(--page-color) url("../images/modal/calendar.svg") no-repeat 400px 14px;
   border-radius: 4px;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  width: 60px;
+  opacity: 0;
 }
 
 .search-label-date {
@@ -1185,5 +1191,52 @@ body {
   background-color: #333333;
 }
 
+.modal-close-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--page-color);
+  position: absolute;
+  right: -18px;
+  top: 0;
+}
 
+.close-button-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
+.modal-close-button:hover {
+  background-color: var(--border-basic);
+}
+
+.modal-close-button:focus {
+  background-color: var(--border-basic);
+  outline: var(--btn-secondary-dark) 3px solid;
+}
+
+.modal-close-button:active {
+  background-color: var(--border-basic);
+}
+
+.modal-close-button:active .close-button-mark {
+  opacity: 0.3;
+}
+
+.counter-button:hover .counter-button-mark {
+  fill: #000;
+}
+
+.counter-button:focus .counter-button-mark {
+  fill: #000;
+  outline: 3px solid var(--btn-secondary-dark);
+  border-radius: 4px;
+}
+
+.counter-button:active .counter-button-mark {
+  fill: rgba(0, 0, 0, 0.2);
+}
