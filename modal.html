@@ -113,7 +113,7 @@
         <div class="content-container hotels-content-container">
           <h2 class="header-wrapper header-2">Заинтересовались?</h2>
           <p class="section-desc hotels-section-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="basic-button big-button" href="modal.html">поиск гостиницы в седоне</a>
+          <button class="basic-button big-button" type="button">поиск гостиниц в седоне</button>
         </div>
       </section>
       <section class="notifications">
@@ -163,5 +163,68 @@
         </a>
         </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <header class="modal-header">
+          <h2 class="header-2 modal-title">Поиск гостиницы в Седоне</h2>
+          <a class="modal-close-button" href="index.html">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close-button-mark" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+            </svg>
+          </a>
+        </header>
+        <section class="hotel-search">
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" target="_blank">
+            <fieldset class="hotel-search-group">
+              <legend class="visually-hidden">Даты поездки</legend>
+              <label class="search-label-date check-in-label">
+                <span class="header-4">Дата Заезда:</span>
+                <input class="basic-input date-input" type="date" value="2020-04-27" name="check-in-date">
+              </label>
+              <label class="search-label-date check-out-label">
+                <span class="header-4">Дата Выезда:</span>
+                <input class="basic-input date-input" type="date" value="2023-09-01" name="check-out-date">
+              </label>
+            </fieldset>
+            <fieldset class="hotel-search-group guest-count-group">
+              <legend class="visually-hidden">Число гостей</legend>
+              <div class="guest-counter-container">
+                <label for="adults-count" class="header-4 guest-counter-label">Взрослые:</label>
+                <button class="counter-button counter-button-minus" type="button">
+                  <svg class="counter-button-mark" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z"/>
+                  </svg>
+                </button>
+                <input id="adults-count" class="basic-input guest-number-input" type="number" value="2" name="adults">
+                <button class="counter-button counter-button-plus" type="button">
+                  <svg class="counter-button-mark" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="guest-counter-container children-counter">
+                <label for="children-count" class="guest-counter-label children-counter-label">
+                  <span class="header-4">Дети:</span>
+                  <span class="tooltip-mark"></span>
+                </label>
+                <button class="counter-button counter-button-minus" type="button">
+                  <svg class="counter-button-mark" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z"/>
+                  </svg>
+                </button>
+                <input id="children-count" class="basic-input guest-number-input" type="number" value="2" name="children">
+                <button class="counter-button counter-button-plus" type="button">
+                  <svg class="counter-button-mark" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                  </svg>
+                </button>
+              </div>
+            </fieldset>
+            <button class="basic-button additional-button hotel-search-button">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
